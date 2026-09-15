@@ -1,44 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISTAS</title>
+    <title>Tipos de Listas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .contenedor {
+            width: 80%;
+            margin: auto;
+        }
+
+        ol, ul, dl {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #1a237e;
+        }
+
+        h2 {
+            color: #00695c;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #8e24aa;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #c62828;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <center>
-        <h1>ETIQUETAS DE LISTAS</h1>
-        <h3><a href="index.html">REGRESAR</a></h3>
-        <h2>LISTA ORDENADA</h2>
-        <ol>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-            <li>Elemento 4</li>
-            <li>Elemento 5</li>
-        </ol>
 
-        <h2>LISTA DESORDENADA</h2>
-        <ul>
-            <li>Elemento A</li>
-            <li>Elemento B</li>
-            <li>Elemento C</li>
-            <li>Elemento D</li>
-        </ul>
+<div class="contenedor">
 
-        <h2>LISTA DE DEFINICION</h2>
-        <dl>
-            <dt>Término 1</dt>
-            <dd>Definición del término 1.</dd>
+    <h1>TIPOS DE LISTAS EN HTML5</h1>
 
-            <dt>Término 2</dt>
-            <dd>Definición del término 2.</dd>
+     <h2>
+        <a href="index.html">REGRESAR</a>
+    </h2>
 
-            <dt>Término 3</dt>
-            <dd>Definición del término 3.</dd>
+    <!-- LISTAS ORDENADAS -->
 
-            <dt>Término 4</dt>
-            <dd>Definición del término 4.</dd>
-        </dl>
+    <h2>LISTAS ORDENADAS &lt;ol&gt;</h2>
+
+    <h3>1. Números (1, 2, 3...)</h3>
+
+    <ol type="1">
+        <li>Manzana</li>
+        <li>Plátano</li>
+        <li>Naranja</li>
+        <li>Fresa</li>
+        <li>Mango</li>
+        <li>Uva</li>
+        <li>Pera</li>
+        <li>Sandía</li>
+        <li>Melón</li>
+        <li>Piña</li>
+    </ol>
+
+    <h3>2. Letras mayúsculas (A, B, C...)</h3>
+
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Ruby</li>
+        <li>Swift</li>
+    </ol>
+
+    <h3>3. Letras minúsculas (a, b, c...)</h3>
+
+    <ol type="a">
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>León</li>
+        <li>Tigre</li>
+        <li>Elefante</li>
+        <li>Jirafa</li>
+        <li>Cebra</li>
+        <li>Mono</li>
+        <li>Oso</li>
+        <li>Lobo</li>
+    </ol>
+
+    <h3>4. Números romanos mayúsculos (I, II, III...)</h3>
+
+    <ol type="I">
+        <li>Historia</li>
+        <li>Matemáticas</li>
+        <li>Español</li>
+        <li>Inglés</li>
+        <li>Biología</li>
+        <li>Química</li>
+        <li>Física</li>
+        <li>Geografía</li>
+        <li>Informática</li>
+        <li>Arte</li>
+    </ol>
+
+    <h3>5. Números romanos minúsculos (i, ii, iii...)</h3>
+
+    <ol type="i">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+        <li>Enero</li>
+        <li>Febrero</li>
+        <li>Marzo</li>
+        <li>Abril</li>
+        <li>Mayo</li>
+        <li>Junio</li>
+    </ol>
+
+
+    <!-- LISTAS DESORDENADAS -->
+
+    <h2>LISTAS DESORDENADAS &lt;ul&gt;</h2>
+
+    <h3>1. Círculo relleno (disc)</h3>
+
+    <ul type="disc">
+        <li>Pizza</li>
+        <li>Hamburguesa</li>
+        <li>Tacos</li>
+        <li>Enchiladas</li>
+        <li>Quesadillas</li>
+        <li>Burritos</li>
+        <li>Hot Dogs</li>
+        <li>Sushi</li>
+        <li>Lasagna</li>
+        <li>Spaghetti</li>
+    </ul>
+
+    <h3>2. Círculo vacío (circle)</h3>
+
+    <ul type="circle">
+        <li>Rojo</li>
+        <li>Azul</li>
+        <li>Verde</li>
+        <li>Amarillo</li>
+        <li>Naranja</li>
+        <li>Morado</li>
+        <li>Rosa</li>
+        <li>Negro</li>
+        <li>Blanco</li>
+        <li>Gris</li>
+    </ul>
+
+    <h3>3. Cuadrado (square)</h3>
+
+    <ul type="square">
+        <li>Computadora</li>
+        <li>Teclado</li>
+        <li>Mouse</li>
+        <li>Monitor</li>
+        <li>Impresora</li>
+        <li>Bocinas</li>
+        <li>Audífonos</li>
+        <li>Micrófono</li>
+        <li>Cámara web</li>
+        <li>Memoria USB</li>
+    </ul>
+
+
+    <!-- LISTA DE DEFINICIÓN -->
+
+    <h2>LISTA DE DEFINICIÓN &lt;dl&gt;</h2>
+
+    <h3>1. Términos y definiciones</h3>
+
+    <dl>
+
+        <dt>HTML</dt>
+        <dd>Lenguaje utilizado para crear la estructura de una página web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Lenguaje utilizado para diseñar y dar estilo a una página web.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Lenguaje de programación utilizado para agregar interactividad a las páginas web.</dd>
+
+        <dt>Internet</dt>
+        <dd>Red mundial que conecta computadoras y dispositivos.</dd>
+
+        <dt>Navegador</dt>
+        <dd>Programa que permite visualizar páginas web.</dd>
+
+        <dt>Servidor</dt>
+        <dd>Computadora que proporciona información o servicios a otros dispositivos.</dd>
+
+        <dt>URL</dt>
+        <dd>Dirección utilizada para localizar un recurso en Internet.</dd>
+
+        <dt>Etiqueta</dt>
+        <dd>Elemento utilizado para estructurar el contenido de un documento HTML.</dd>
+
+        <dt>Enlace</dt>
+        <dd>Elemento que permite acceder a otra página o recurso.</dd>
+
+        <dt>Web</dt>
+        <dd>Sistema de documentos y recursos que pueden consultarse mediante Internet.</dd>
+
+    </dl>
+
+
+</div>
+
 </body>
 </html>
