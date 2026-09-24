@@ -2,84 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de Listas</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f2f2f2;
-        }
-
-        .contenedor {
-            width: 80%;
-            margin: auto;
-        }
-
-        ol, ul, dl {
-            display: inline-block;
-            text-align: left;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #1a237e;
-        }
-
-        h2 {
-            color: #00695c;
-            margin-top: 40px;
-        }
-
-        h3 {
-            color: #8e24aa;
-        }
-
-        dt {
-            font-weight: bold;
-            color: #c62828;
-            margin-top: 10px;
-        }
-
-        dd {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Tipos de listas en HTML</title>
 </head>
 
 <body>
 
-<div class="contenedor">
+    <h1>Tipos de Listas en HTML</h1>
+    <h2><a href="index.html">REGRESAR</a></h2>
+    <!-- 1. LISTA ORDENADA CON NÚMEROS -->
+    <h2>1. Lista ordenada con números</h2>
 
-    <h1>TIPOS DE LISTAS EN HTML5</h1>
-
-     <h2>
-        <a href="index.html">REGRESAR</a>
-    </h2>
-
-    <!-- LISTAS ORDENADAS -->
-
-    <h2>LISTAS ORDENADAS &lt;ol&gt;</h2>
-
-    <h3>1. Números (1, 2, 3...)</h3>
-
-    <ol type="1">
+    <ol>
         <li>Manzana</li>
         <li>Plátano</li>
         <li>Naranja</li>
         <li>Fresa</li>
-        <li>Mango</li>
         <li>Uva</li>
-        <li>Pera</li>
+        <li>Mango</li>
         <li>Sandía</li>
         <li>Melón</li>
         <li>Piña</li>
+        <li>Pera</li>
     </ol>
 
-    <h3>2. Letras mayúsculas (A, B, C...)</h3>
+
+    <!-- 2. LISTA ORDENADA CON LETRAS MAYÚSCULAS -->
+    <h2>2. Lista ordenada con letras mayúsculas</h2>
 
     <ol type="A">
+        <li>México</li>
+        <li>España</li>
+        <li>Argentina</li>
+        <li>Brasil</li>
+        <li>Canadá</li>
+        <li>Francia</li>
+        <li>Italia</li>
+        <li>Japón</li>
+        <li>China</li>
+        <li>Australia</li>
+    </ol>
+
+
+    <!-- 3. LISTA ORDENADA CON LETRAS MINÚSCULAS -->
+    <h2>3. Lista ordenada con letras minúsculas</h2>
+
+    <ol type="a">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -92,39 +59,11 @@
         <li>Swift</li>
     </ol>
 
-    <h3>3. Letras minúsculas (a, b, c...)</h3>
 
-    <ol type="a">
-        <li>Perro</li>
-        <li>Gato</li>
-        <li>León</li>
-        <li>Tigre</li>
-        <li>Elefante</li>
-        <li>Jirafa</li>
-        <li>Cebra</li>
-        <li>Mono</li>
-        <li>Oso</li>
-        <li>Lobo</li>
-    </ol>
-
-    <h3>4. Números romanos mayúsculos (I, II, III...)</h3>
+    <!-- 4. LISTA ORDENADA CON ROMANOS MAYÚSCULOS -->
+    <h2>4. Lista ordenada con números romanos</h2>
 
     <ol type="I">
-        <li>Historia</li>
-        <li>Matemáticas</li>
-        <li>Español</li>
-        <li>Inglés</li>
-        <li>Biología</li>
-        <li>Química</li>
-        <li>Física</li>
-        <li>Geografía</li>
-        <li>Informática</li>
-        <li>Arte</li>
-    </ol>
-
-    <h3>5. Números romanos minúsculos (i, ii, iii...)</h3>
-
-    <ol type="i">
         <li>Primavera</li>
         <li>Verano</li>
         <li>Otoño</li>
@@ -138,26 +77,25 @@
     </ol>
 
 
-    <!-- LISTAS DESORDENADAS -->
+    <!-- 5. LISTA ORDENADA CON ROMANOS MINÚSCULOS -->
+    <h2>5. Lista ordenada con números romanos minúsculos</h2>
 
-    <h2>LISTAS DESORDENADAS &lt;ul&gt;</h2>
+    <ol type="i">
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Caballo</li>
+        <li>Vaca</li>
+        <li>Oveja</li>
+        <li>Cabra</li>
+        <li>Cerdo</li>
+        <li>Gallina</li>
+        <li>Conejo</li>
+        <li>Tortuga</li>
+    </ol>
 
-    <h3>1. Círculo relleno (disc)</h3>
 
-    <ul type="disc">
-        <li>Pizza</li>
-        <li>Hamburguesa</li>
-        <li>Tacos</li>
-        <li>Enchiladas</li>
-        <li>Quesadillas</li>
-        <li>Burritos</li>
-        <li>Hot Dogs</li>
-        <li>Sushi</li>
-        <li>Lasagna</li>
-        <li>Spaghetti</li>
-    </ul>
-
-    <h3>2. Círculo vacío (circle)</h3>
+    <!-- 6. LISTA DESORDENADA CON CÍRCULOS -->
+    <h2>6. Lista desordenada con círculos</h2>
 
     <ul type="circle">
         <li>Rojo</li>
@@ -172,64 +110,75 @@
         <li>Gris</li>
     </ul>
 
-    <h3>3. Cuadrado (square)</h3>
+
+    <!-- 7. LISTA DESORDENADA CON CUADRADOS -->
+    <h2>7. Lista desordenada con cuadrados</h2>
 
     <ul type="square">
+        <li>Pizza</li>
+        <li>Hamburguesa</li>
+        <li>Tacos</li>
+        <li>Enchiladas</li>
+        <li>Quesadillas</li>
+        <li>Sushi</li>
+        <li>Pasta</li>
+        <li>Hot dog</li>
+        <li>Lasagna</li>
+        <li>Ensalada</li>
+    </ul>
+
+
+    <!-- 8. LISTA DESORDENADA CON VIÑETAS -->
+    <h2>8. Lista desordenada con viñetas</h2>
+
+    <ul type="disc">
         <li>Computadora</li>
+        <li>Teléfono</li>
+        <li>Tablet</li>
         <li>Teclado</li>
         <li>Mouse</li>
         <li>Monitor</li>
         <li>Impresora</li>
         <li>Bocinas</li>
+        <li>Cámara</li>
         <li>Audífonos</li>
-        <li>Micrófono</li>
-        <li>Cámara web</li>
-        <li>Memoria USB</li>
     </ul>
 
 
-    <!-- LISTA DE DEFINICIÓN -->
-
-    <h2>LISTA DE DEFINICIÓN &lt;dl&gt;</h2>
-
-    <h3>1. Términos y definiciones</h3>
+    <!-- 9. LISTA DE DEFINICIÓN -->
+    <h2>9. Lista de definición</h2>
 
     <dl>
-
         <dt>HTML</dt>
         <dd>Lenguaje utilizado para crear la estructura de una página web.</dd>
 
         <dt>CSS</dt>
-        <dd>Lenguaje utilizado para diseñar y dar estilo a una página web.</dd>
+        <dd>Lenguaje utilizado para diseñar páginas web.</dd>
 
         <dt>JavaScript</dt>
-        <dd>Lenguaje de programación utilizado para agregar interactividad a las páginas web.</dd>
+        <dd>Lenguaje utilizado para agregar interactividad a una página web.</dd>
 
-        <dt>Internet</dt>
-        <dd>Red mundial que conecta computadoras y dispositivos.</dd>
+        <dt>Python</dt>
+        <dd>Lenguaje de programación de propósito general.</dd>
 
-        <dt>Navegador</dt>
-        <dd>Programa que permite visualizar páginas web.</dd>
+        <dt>PHP</dt>
+        <dd>Lenguaje utilizado para desarrollar páginas web dinámicas.</dd>
 
-        <dt>Servidor</dt>
-        <dd>Computadora que proporciona información o servicios a otros dispositivos.</dd>
+        <dt>SQL</dt>
+        <dd>Lenguaje utilizado para trabajar con bases de datos.</dd>
+
+        <dt>HTTP</dt>
+        <dd>Protocolo utilizado para la comunicación en la web.</dd>
 
         <dt>URL</dt>
         <dd>Dirección utilizada para localizar un recurso en Internet.</dd>
 
-        <dt>Etiqueta</dt>
-        <dd>Elemento utilizado para estructurar el contenido de un documento HTML.</dd>
+        <dt>WWW</dt>
+        <dd>Sistema de páginas y recursos conectados mediante Internet.</dd>
 
-        <dt>Enlace</dt>
-        <dd>Elemento que permite acceder a otra página o recurso.</dd>
-
-        <dt>Web</dt>
-        <dd>Sistema de documentos y recursos que pueden consultarse mediante Internet.</dd>
-
+        <dt>Navegador</dt>
+        <dd>Programa utilizado para visualizar páginas web.</dd>
     </dl>
-
-
-</div>
 
 </body>
 </html>
