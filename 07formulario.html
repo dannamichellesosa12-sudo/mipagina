@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS HTML</title>
+</head>
+<body>
+    <h3><a href="index.html">REGRESAR</a></h3>
+    <form action="guardar.php" method="post" enctype="multipart/form-data">
+        <table width="100%" border="1" align="center">
+            <thead>
+                <tr>
+                    <th>NP</th>
+                    <th>Nombre</th>
+                    <th>Ejemplo</th>
+                    <th>Descripción</th>
+                    <th>Alumno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>optgroup</td>
+                    <td>
+                        <label for="especialidad">Especialidad:</label>
+                        <select id="especialidad" name="especialidad">
+                            <optgroup label="Ciencias">
+                                <option value="bio">Biología</option>
+                                <option value="quim">Química</option>
+                            </optgroup>
+                            <optgroup label="Arte">
+                                <option value="mus">Música</option>
+                                <option value="dib">Dibujo</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>Se usa para clasificar u organizar las opciones de un menú por categorías.</td>
+                    <td>ESTEBAN</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>meter</td>
+                    <td>
+                        <label for="calificacion">Calificación:</label>
+                        <meter id="calificacion" min="0" max="100" value="85">85%</meter>
+                    </td>
+                    <td>Una barra visual que indica una cantidad concreta dentro de un rango determinado.</td>
+                    <td>ANGEL</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Label o Etiqueta</td>
+                    <td>
+                        <label for="usuario">Nombre de usuario:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+                    </td>
+                    <td>Texto que indica qué información debe escribirse en un campo específico.</td>
+                    <td>JESUS</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>check box</td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="intereses[]" value="deporte">
+                            Deporte
+                        </label>
+                        <label>
+                            <input type="checkbox" name="intereses[]" value="musica">
+                            Música
+                        </label>
+                    </td>
+                    <td>Casillas cuadradas para elegir una o varias opciones al mismo tiempo.</td>
+                    <td>ALEXIS</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>file</td>
+                    <td>
+                        <label for="doc">Subir tarea:</label>
+                        <input type="file" id="doc" name="doc">
+                    </td>
+                    <td>Permite examinar las carpetas del equipo y adjuntar un documento o imagen.</td>
+                    <td>MICH</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>boton reset</td>
+                    <td>
+                        <input type="reset" value="Limpiar campos">
+                    </td>
+                    <td>Un botón que borra todo lo que se ingresó en el formulario y lo deja en blanco.</td>
+                    <td>XIMENA</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>legend</td>
+                    <td>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <label for="tel_contacto">Teléfono:</label>
+                            <input type="tel" id="tel_contacto" name="tel_contacto">
+                        </fieldset>
+                    </td>
+                    <td>Es el encabezado o título que identifica a un grupo de elementos en un cuadro.</td>
+                    <td>ZOE</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>range</td>
+                    <td>
+                        <label for="brillo">Brillo:</label>
+                        <input type="range" id="brillo" name="brillo" min="0" max="100" value="100"
+                        oninput="document.body.style.filter='brightness('+this.value+'%)'">
+                    </td>
+                    <td>Una barra deslizable con la que se ajusta un valor numérico moviendo un control.</td>
+                    <td>ABRAHAM</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>password</td>
+                    <td>
+                        <label for="clave">NIP:</label>
+                        <input type="password" id="clave" name="clave" minlength="4">
+                    </td>
+                    <td>Campo para claves de acceso que oculta los caracteres.</td>
+                    <td>HECTOR</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>datalist</td>
+                    <td>
+                        <label for="materia">Materia:</label>
+                        <input type="text" id="materia" name="materia" list="materias">
+                        <datalist id="materias">
+                            <option value="Matemáticas">
+                            <option value="Historia">
+                            <option value="Geografía">
+                        </datalist>
+                    </td>
+                    <td>Campo de texto que muestra sugerencias mientras la persona va escribiendo.</td>
+                    <td>REGINA</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>formulario</td>
+                    <td>
+                        <label for="msj">Mensaje:</label>
+                        <input type="text" id="msj" name="msj">
+                    </td>
+                    <td>La estructura principal que envuelve todos los controles para recopilar y procesar datos.</td>
+                    <td>CHARBEL</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>date</td>
+                    <td>
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="nacimiento" name="nacimiento">
+                    </td>
+                    <td>Despliega un selector en forma de calendario para elegir día, mes y año.</td>
+                    <td>YATZIL</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>fieldset</td>
+                    <td>
+                        <fieldset>
+                            <legend>Dirección</legend>
+                            <label for="calle">Calle:</label>
+                            <input type="text" id="calle" name="calle">
+                        </fieldset>
+                    </td>
+                    <td>Crea un recuadro que agrupa varias casillas o controles relacionados.</td>
+                    <td>GABRIEL</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>textarea</td>
+                    <td>
+                        <label for="opinion">Opinión:</label><br>
+                        <textarea id="opinion" name="opinion" rows="3" cols="30"></textarea>
+                    </td>
+                    <td>Un cuadro amplio para redactar párrafos completos o respuestas largas.</td>
+                    <td>NATALIA</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>select</td>
+                    <td>
+                        <label for="turno">Turno:</label>
+                        <select id="turno" name="turno">
+                            <option value="matutino">Matutino</option>
+                            <option value="vespertino">Vespertino</option>
+                        </select>
+                    </td>
+                    <td>Menú desplegable simple que permite elegir una sola opción.</td>
+                    <td>MAYTE</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>color</td>
+                    <td>
+                        <label for="favcolor">Color favorito:</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    </td>
+                    <td>Abre la paleta del sistema para escoger un tono específico.</td>
+                    <td>BRAYAN</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>url</td>
+                    <td>
+                        <label for="perfil">Enlace a red social:</label>
+                        <input type="url" id="perfil" name="perfil" placeholder="https://...">
+                    </td>
+                    <td>Campo para poner páginas de internet con formato válido.</td>
+                    <td>SANTIAGO</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>number</td>
+                    <td>
+                        <label for="piezas">Piezas a pedir:</label>
+                        <input type="number" id="piezas" name="piezas" min="1" max="50" value="1">
+                    </td>
+                    <td>Campo para ingresar números, con controles para aumentar o disminuir la cifra.</td>
+                    <td>ZURIEL</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>hidden</td>
+                    <td>
+                        <input type="hidden" id="id_usuario" name="id_usuario" value="USR123">
+                        <button type="button" onclick="alert(document.getElementById('id_usuario').value)">Ver valor oculto</button>
+                    </td>
+                    <td>Guarda información que no se muestra normalmente y que se envía con el formulario.</td>
+                    <td>JUAN DE JESUS</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>radio</td>
+                    <td>
+                        <input type="radio" id="m" name="genero" value="m">
+                        <label for="m">Masculino</label>
+                        <input type="radio" id="f" name="genero" value="f">
+                        <label for="f">Femenino</label>
+                    </td>
+                    <td>Botones circulares para elegir una alternativa de un grupo.</td>
+                    <td>IAN</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>submit</td>
+                    <td>
+                        <input type="submit" value="Procesar registro">
+                    </td>
+                    <td>Botón que procesa y envía los datos del formulario al servidor.</td>
+                    <td>CARLOS</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>email</td>
+                    <td>
+                        <label for="correo_usr">Correo escolar:</label>
+                        <input type="email" id="correo_usr" name="correo_usr" placeholder="ejemplo@correo.com">
+                    </td>
+                    <td>Verifica que el texto ingresado tenga una estructura de correo electrónico.</td>
+                    <td>SEBAS</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>month</td>
+                    <td>
+                        <label for="vigencia">Mes de vencimiento:</label>
+                        <input type="month" id="vigencia" name="vigencia">
+                    </td>
+                    <td>Control para elegir únicamente el mes y el año.</td>
+                    <td>EMILIO</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>time</td>
+                    <td>
+                        <label for="horario">Hora de entrada:</label>
+                        <input type="time" id="horario" name="horario">
+                    </td>
+                    <td>Despliega un selector para capturar horas y minutos.</td>
+                    <td>ALEXIS</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>text</td>
+                    <td>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                    </td>
+                    <td>Entrada básica para escribir texto libre.</td>
+                    <td>JULIETA</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>tel</td>
+                    <td>
+                        <label for="celular">Teléfono celular:</label>
+                        <input type="tel" id="celular" name="celular">
+                    </td>
+                    <td>Diseñado para ingresar números de teléfono.</td>
+                    <td>IRVIN</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>progress</td>
+                    <td>
+                        <label for="carga">Carga:</label>
+                        <progress id="carga" value="70" max="100">70%</progress>
+                    </td>
+                    <td>Visualiza el avance o porcentaje completado de un proceso.</td>
+                    <td>DILAN</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>output</td>
+                    <td>
+                        <label for="numero1">Número 1:</label>
+                        <input type="number" id="numero1" name="numero1" value="100"
+                        oninput="document.getElementById('total').value=Number(this.value)+Number(document.getElementById('numero2').value)">
+                        <label for="numero2">Número 2:</label>
+                        <input type="number" id="numero2" name="numero2" value="50"
+                        oninput="document.getElementById('total').value=Number(this.value)+Number(document.getElementById('numero1').value)">
+                        <label for="total">Suma total:</label>
+                        <output id="total" name="total">150</output>
+                    </td>
+                    <td>Elemento destinado a presentar el resultado de una operación o cálculo.</td>
+                    <td>ABRIL</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>week</td>
+                    <td>
+                        <label for="semana_entrega">Semana de entrega:</label>
+                        <input type="week" id="semana_entrega" name="semana_entrega">
+                    </td>
+                    <td>Un selector específico para señalar una semana del calendario.</td>
+                    <td>DIEGO</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
